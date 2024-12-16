@@ -1,6 +1,7 @@
 from tools.read_tools import read_fvecs
 from tools.write_tools import save_data
 from tools.examine_data import data_check
+
 '''
 读取 index 与 query 数据
 numpy.ndarray
