@@ -72,17 +72,17 @@ def main():
     create_directories([target_base_path])
 
     datasets = {
-        'sift10K': {
-            'url': 'https://github.com/TileDB-Inc/TileDB-Vector-Search/releases/download/0.0.1/siftsmall.tgz',
-            'target_path': os.path.join(target_base_path, 'sift10K'),
-            'fname': 'siftsmall.tar.gz'
-        }
+        # 'sift10K': {
+        #     'url': 'https://github.com/TileDB-Inc/TileDB-Vector-Search/releases/download/0.0.1/siftsmall.tgz',
+        #     'target_path': os.path.join(target_base_path, 'sift10K'),
+        #     'fname': 'siftsmall.tar.gz'
+        # # }
         # },
-        # 'sift1M': {
-        #     'url': 'https://figshare.com/ndownloader/files/13755344',
-        #     'target_path': os.path.join(target_base_path, 'sift1M'),
-        #     'fname': 'sift1M.tar.gz'
-        # }
+        'sift1M': {
+            'url': 'https://figshare.com/ndownloader/files/13755344',
+            'target_path': os.path.join(target_base_path, 'sift1M'),
+            'fname': 'sift1M.tar.gz'
+        }
     }
 
     create_directories([data['target_path'] for data in datasets.values()])
